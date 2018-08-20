@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Landing</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- подключаєм скрипт плавной прокрутки якорей -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ $(document).ready(function(){
+    $("#myTopnav, #2").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+</head>
+<body>
+	<header>
+		<div class="header_logo"><p>JBL-STORE</p></div>
+	  <nav>
+		<div class="topnav responsive" id="myTopnav">
+			<a href="#0">ГЛАВНАЯ</a>
+			<a href="#1">ИНФО</a>
+			<a href="#2">КАТАЛОГ</a>
+			<a href="#3">ДОСТАВКА</a>
+			<a href="#4">КОНТАКТЫ</a>
+			<a href="#" id="menu" class="icon">&#9776;</a>
+		</div>
+	   </nav>
+    </header>
+	<main>
+		<div class="main_welcome" id="0">
+			<h1>WELCOME AT <span class="mycompany">JBL-STORE</span></h1>
+			<p>Акустика нового поколения</p>\
+			<img src="img/jbl1.png" alt="">
+		</div>
+		
+			<div class="main_about" id="1">
+				<div class="about_left">
+					<img class="mw-100" src="img/jbl.jpg" alt="mac">
+				</div>
+				<div class="about_right">
+					<h1>Описание и Технические <br> характеристики - <span id="q"> JBL Charge</span></h1>
+					<p>JBL Charge — это портативная 
+					беспроводная акустическая система 
+				    нового поколения из отмеченной 
+				    многими наградами серии Charge с удивительно мощным стереозвуком.</p>
+				    <p>Емкий аккумулятор на 6000 мА*ч обеспечивает до 20 часов автономной работы и позволяет заряжать устройства через USB-порт. Встроенный микрофон с шумо- и эхоподавлением гарантирует идеально чистый звук во время телефонных разговоров по нажатию одной кнопки.</p>
+				    <p>Нет необходимости беспокоиться о дожде или разлитой воде, благодаря водонепроницаемым материалам, вы можете погружать JBL Charge в воду.</p>
+				    <p>Наличие пассивных радиаторов обеспечивает более насыщенное звучание низких частот, а функция Social Mode позволит подключать до трёх устройств и слушать с них музыку по очереди.</p>
+				</div>
+			</div>
+            <div class="main_work" id="2">
+            	<div class="wrapper1">
+            		<h1>Приобрести товар ты можешь здесь</h1>
+            		<p>Просто выберите нужный вам товар, и свяжитесь с нами</p>
+            		<div class="gallery">
+            			<div class="line1">
+                        <a href="#4"><div class="box_img"><img src="img/flip_red_small.png" alt=""><p>JBL Flip 4 RED</p><h4>Цена - 92$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/flip_blue_small.png" alt=""><p>JBL Flip 4 BLUE</p><h4>Цена - 92$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/flip_grey_small.png" alt=""><p>JBL Flip 4 GREY</p><h4>Цена - 92$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/flip_white_small.png" alt=""><p>JBL Flip 4 WHITE</p><h4>Цена - 92$</h4></div></a>
+                    </div>
+                     <div class="line2">
+                        <a href="#4"><div class="box1_img"><img src="img/boombox_green_small.jpg" alt=""><p>JBL Boombox Squad </p><h4>Цена - 415$</h4></div></a>
+                        <a href="#4"><div class="box1_img"><img src="img/boombox_black_small.jpg" alt=""><p>JBL Boombox Black</p><h4>Цена - 415$</h4></div></a>
+                    </div>
+                     <div class="line3">
+                     	<div>
+                        <a href="#4"><div class="box_img"><img src="img/charge_black_small.jpg" alt=""><p>JBL Charge 3 Black</p><h4>Цена - 125$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/charge_blue_small.jpg" alt=""><p>JBL Charge 3 Teal</p><h4>Цена - 125$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/charge_white_small.jpg" alt=""><p>JBL Charge 3 Grey</p><h4>Цена - 125$</h4></div></a>
+                        <a href="#4"><div class="box_img"><img src="img/charge_red_small.jpg" alt=""><p>JBL Charge 3 Red</p><h4>Цена - 125$</h4></div></a>
+                        </div>
+                    </div>
+            		</div>
+            	</div>
+            </div>		
+		<div class="main_team" id="3">
+			<h1>Доставка и оплата</h1>
+			
+			<div class="delivery">
+				<div class="delivery_card">
+					<div class="photo"></div>			
+					<h3 class="position">Оплата наличными при получении</h3>
+					<p class="about_position">Возможна Адресная доставка по Киеву. Оплата при получении. Стоимость доставки 50грн.</p>
+				</div>
+				<div class="delivery_card">
+					<div class="photo1"></div>
+					<h3 class="position">Доставка Новой Почтой</h3>
+					<p class="about_position">Доставка в отделение «Нова пошта». С помощью доставки «Нова пошта», Вы можете получить товар даже в самых отдаленных уголках Украины.
+					Оплата при получении.</p>
+				</div>
+				<div class="delivery_card">
+					<div class="photo2"></div>
+					<h3 class="position">Самовывоз</h3>
+					<p class="about_position">Самовывоз товара по адресу: г.Киев просп. Науки 8</p>
+				</div>
+			</div>
+		</div>
+			
+		<section class="contact_form" id="4">
+			<h1>Свяжитесь с нами</h1>
+			
+			<div class="contact-wrapper">
+				<p>Для заказа товара свяжитесь с нами по ниже указанной контактной информации, или напишитес письмо и мы обязательно вам перезвоним.</p>
+				<p>Контактны номер тел.: 093-91-00-426</p>
+				<p>E-mail: Kostenko.eng@gmail.com</p>
+				<p>Наш адрес: г.Киев, ст. м.Демеевская, просп.Науки 8</p>
+				<form action="#" name="newform" method="post">
+					<div class="form_inputs">
+						<p>Name <span class="input_star">*</span><input type="text"></p>
+						<p>Mobile number<span class="input_star">*</span><input type="text"></p>
+					</div>
+					<p>Massege <span class="input_star">*</span></p>
+					<textarea name="text" ></textarea>
+					<div class="button_block">
+						<input type="submit" value="SEND">
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+		  <div class="social" id="5">
+			   <a href="#5"><img src="img/soc1.png" alt=""></a>
+			   <a href="#5"><img src="img/soc2.png" alt=""></a>
+			   <a href="#5"><img src="img/soc3.png" alt=""></a>
+			   <a href="#5"><img src="img/soc4.png" alt=""></a>
+			   <a href="#5"><img src="img/soc5.png" alt=""></a>
+		  </div>
+		</div>
+	</footer>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
